@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption,footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -72,10 +72,11 @@ table {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  display: inline-flex;
 }
 
 li a {
-  display: block;
+  display:inline-grid;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -87,13 +88,6 @@ li a:hover {
   background-color: #111;
 }
 
-centered {
-  text-align: center;
-}
-.middeler{
-  margin-left: 40%;
-  
-}
 #middle_text {
   text-align: center;
 }
@@ -116,6 +110,7 @@ centered {
   grid-template-columns: auto auto auto;
   padding: 10px;
   padding-left: 2%;
+  
 }
 
 .container > div {
@@ -123,4 +118,10 @@ centered {
   border: 10px solid black;
   font-size: 12px;
   text-align: center;
+}
+.footerr{
+  position: absolute;
+  bottom: 0px;
+  display: inline-flex;
+
 }
